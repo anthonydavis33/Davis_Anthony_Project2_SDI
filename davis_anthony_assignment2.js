@@ -10,9 +10,16 @@ var     yourName,
         hasTrained
 ;
 
+alert ("Hail! I am John Johnson.");
 // Prompt
+yourName = prompt("What be your name traveler?", 'Enter your name here. IE "John"');
 
 // Procedure
+if (yourName === "John") {
+    console.log("Welcome John! Theres a free house over there if you like.")
+}   else {
+    console.log(yourName + " is a terrible name. Please see the name changing building.")
+}
 
 // Confirm
 
