@@ -1,13 +1,14 @@
 /* Anthony Davis
 * 07/17/2014
 * Project 2
-* Dragon Owner Training
+* Dragon Overall Training
 */
 
 // Initial Variables
-var     yourName,
-        dragonsTrained,
-        hasTrained
+var     yourName = "John",
+        specialTitle = "Master Dragon Trainer",
+        dragonsTrained = 0,
+        hasTrained = 0
 ;
 
 // Boolean function
@@ -24,10 +25,27 @@ var trainingFunction = function (hasTrained, yourName) {
         i ++;
     };
     console.log(yourName + " Has completed dragon training!");
-    hasTrained = 1;
-    return hasTrained;
+    return hasTrained = true;
 };
+
+// Number Function
+var dragonFunction = function (yourName) {
+    for (i = 1; i < 15; i++) {
+        console.log("You have trained " + i + " Dragons.");
+    };
+    console.log(yourName + " has trained " + i + " Dragons!");
+    return dragonsTrained = i;
+};
+
+// String Function
+var newNameFunction = function (yourName, specialTitle) {
+    var newName = (yourName + " " + specialTitle);
+    return newName;
+};
+
+// It begins!
 alert ("Hail! I am John Johnson.");
+
 // Prompt - String
 yourName = prompt("What be your name traveler?", 'Enter your name here. IE "John"');
 
@@ -43,9 +61,15 @@ hasTrained = confirm("Have you ever taken dragon training before?");
 alert ("Well let's take you through our training!");
 
 // Boolean Function call
-trainingFunction(hasTrained, yourName);
+hasTrained = trainingFunction(hasTrained, yourName);
+
 // Number Function call
+dragonsTrained = dragonFunction(yourName);
 
 // String Function call
+yourName = newNameFunction(yourName, specialTitle);
+
 
 // Output
+console.log("I announce to you, Johnsville. Sir " + yourName + " of Johnsville.");
+console.log("Training " + dragonsTrained + " dragons in his career and hopefully infinite more.");
